@@ -1,0 +1,9 @@
+com\example\storeservice\service\StockService.class
+com\example\storeservice\StoreServiceApplication.class
+com\example\storeservice\dto\StockDTO.class
+com\example\storeservice\controller\StockController.class
+com\example\storeservice\config\RestTemplateConfig.class
+com\example\storeservice\SwaggerConfig.class
+com\example\storeservice\model\Stock.class
+com\example\storeservice\repository\StockRepository.class
+com\example\storeservice\mapper\StockMapper.class

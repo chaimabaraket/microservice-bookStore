@@ -1,0 +1,8 @@
+com\example\bookservice\mapper\BookMapper.class
+com\example\bookservice\SwaggerConfig.class
+com\example\bookservice\service\BookService.class
+com\example\bookservice\dto\BookDTO.class
+com\example\bookservice\BookServiceApplication.class
+com\example\bookservice\model\Book.class
+com\example\bookservice\repository\BookRepository.class
+com\example\bookservice\controller\BookController.class
