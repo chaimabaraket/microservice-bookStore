@@ -1,12 +1,14 @@
 package com.example.bookservice.controller;
 
 import com.example.bookservice.dto.BookDTO;
-import com.example.bookservice.service.BookService;
+import com.example.bookservice.dto.StockDTO;
 import com.example.bookservice.messaging.BookMessageProducer;
+import com.example.bookservice.service.BookService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 
 @RestController
 @RequestMapping("/books")
@@ -52,4 +54,11 @@ public class BookController {
         bookMessageProducer.sendObjectMessage(book);
         return ResponseEntity.ok("Book object sent!");
     }
+
+    @GetMapping("/test-sync")
+    public ResponseEntity<List<StockDTO>> testSync() {
+    return ResponseEntity.ok(service.callStockService()); // renvoie fallback si nécessaire
+}
+
+
 }
